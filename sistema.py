@@ -6,7 +6,7 @@ print("[3] SAIR")
 opcao = int(input("Digite uma opção: "))
 
 if opcao == 1:
-    print("---=REGISTER ----")
+    print("---REGISTER ----")
 
     nome = input("Digite o seu nome completo: ") #string
     idade = int(input("Digite a sua idade: "))
@@ -25,12 +25,20 @@ if opcao == 1:
 elif opcao == 2:
     
     print("---AUTENTICATION---")
-    login = input("Login: ")
-    password = input("Password: ")
-
-    print("Login: %s" %login)
-    print("Password: ********" )
-    print("Successyfully authenticated user!")
+    email = input("Digite o seu e-mail: ")
+    password = input("Digite a sua senha: ")
+    
+    email_admin = "admin@email.com"
+    password_admin = "123456"
+    
+    print("--------------------")
+    print("E-mail: %s" %email)
+    print("Senha: *******")
+    
+    if (email_admin == email) and (password_admin == password):
+        print("Successyfully authenticated user!")
+    else:
+        print("Dados incorretos. Tente novamente!")
 
 elif opcao ==3:
     
