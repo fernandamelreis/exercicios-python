@@ -1,31 +1,13 @@
-print("[1] CADASTRO")
-print("[2] LOGIN")
-print("---------------------")
+salario = float(input("Digite o seu salário: "))
 
-
-opcao = int(input("Digite uma opção: "))
-
-if (opcao == 1):
-    print("Realizando cadastro...")
-    nome = input("Digite o seu nome: ")
-    email = input("Digite um e-mail: ")
-    senha = input("Digite uma senha: ")
+if (salario <= 800):
+    salario_reaj = float
+    salario_reaj = salario + (salario * 0.35)
+    print("O salario reajustado é: %6.2f" %salario_reaj)
     
-    print("---------------------")
-    print("Lendo informações...")
-    print("Nome: %s" %nome)
-    print("E-mail: %s" %email)
-    print("Senha: %s" %senha)
-    print("Usuário cadastrado!")
+if (salario > 800):
+    salario_reaj = float
+    salario_reaj = salario + (salario * 0.15)
+    print("O salario reajustado é: %6.2f" %salario_reaj)
     
-if (opcao == 2):
     
-    print("Realizando o login...")
-    email = input("Digite um e-mail: ")
-    senha = input("Digite uma senha: ")
-    
-    print("---------------------")
-    print("Lendo informações...")
-    print("E-mail: %s" %email)
-    print("Senha: %s" %senha)
-    print("Usuário autenticado!")
